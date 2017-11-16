@@ -150,11 +150,7 @@ section {
   transition: all .3s ease-in-out;
 }
 .download {
-  position: absolute;
-  right: 0;
-  top: 10px;
-  z-index: 10;
-  margin: 0;
+  margin-left: 30px;
 }
 footer {
   width: 100%;
