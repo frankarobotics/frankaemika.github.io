@@ -37,19 +37,29 @@ h2:after {
     position: absolute;
 }
 h3 {
-    font-weight: 300;
-    font-size: 20px;
-    margin: 0 0 40px 0;
-    line-height: 30px;
-    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 10 0 40px 0;
+    line-height: 20px;
+    margin-bottom: -20px;
     text-transform: uppercase;
     color: #1c2f35;
     width: 100%;
 }
 h4 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 5px;
     color: #1c2f35;
+}
+h5 {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0 0 40px 0;
+    line-height: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #19282D;
+    width: 100%;
 }
 ul {
   list-style: none;
@@ -69,9 +79,12 @@ nav {
 }
 section {
   max-width: 1024px;
-  margin: 60px auto;
+  margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
+}
+p {
+  margin: 0.5em 0;
 }
 .logo {
   width: 160px;
@@ -107,7 +120,7 @@ section {
   margin: 10px 0 0 0;
 }
 .updates li ul li {
-  padding: 5px 0;
+  padding: 1px 0;
 }
 .version {
   font-weight: bold;
@@ -121,6 +134,11 @@ section {
   position: relative;
   width: calc(33% - 20px);
 }
+.bigbox {
+  margin: 0 20px 0 0;
+  position: relative;
+  width: calc(50% - 20px);
+}
 .email {
   padding: 5px;
   margin-right: 10px;
@@ -128,7 +146,6 @@ section {
   transition: all 0.3s;
   font-size: 16px;
   border-radius: 0px;
-  font-size: 16px;
   min-width: 250px;
 }
 .email:hover, .email:active{
@@ -201,6 +218,10 @@ footer a:hover {
     padding: 0 10px;
   }
   .box {
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .bigbox {
     width: 100%;
     margin: 0 0 30px 0;
   }
