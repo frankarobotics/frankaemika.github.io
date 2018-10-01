@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Montserrat:300,400,400i,700');
 
+
+html {
+  height: 100%;
+}
 body {
   background-color: #ebebeb;
   font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
@@ -79,7 +83,7 @@ nav {
 }
 section {
   max-width: 1024px;
-  margin: 50px auto;
+  margin: 50px auto auto;
   display: flex;
   flex-wrap: wrap;
 }
