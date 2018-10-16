@@ -78,70 +78,74 @@
     </section>
 
     <section id="SystemUpdate">
+      <a id="system-updates"></a>
       <h2>System updates</h2>
-      <div class="bigbox">
-        <h3>Panda</h3>
-        <ul class="updates">
-          <li>
-            <div>
-              <span class="version">Version 2.1.1</span>
-              <span class="small">2018-10-10</span>
-              <a class="download button" href="https://s3.eu-central-1.amazonaws.com/franka-updates/update-2.1.1.img">Download</a>
-              <br/>
-              <span class="checksum small">sha256 update-2.1.1.img: 385c1f6351bc52ffc8d5be8c700f67a0f5c2e9d0f3deb8a6da7342dcd7bc8519</span>
-            </div>
+      <ul class="updates">
+        <li>
+          <div>
+            <span class="version">Version 2.1.1</span>
+            <span class="small">2018-10-10</span>
+            <a class="download button" href="">Download</a>
             <br/>
-            <ul>
-              <li>Performance improvements:</li>
-                <ul>
-                  <li><b><i>Important:</i></b> Taught positions could be slightly off due to controller improvements.</li>
-                  <li>Considerably better task execution speed.</li>
-                  <li>Enhanced control algorithms.</li>
-                </ul>
-              <li>User interface improvements and bug fixes.</li>
-            </ul>
-          </li>
-          <li>
-            <div>
-              <span class="version"><a href="system_update_panda.html">All Panda Releases</a></span>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="bigbox">
-        <h3>Panda Research</h3>
-        <ul class="updates">
-          <li>
-            <div>
-              <span class="version">Version 1.3.2</span>
-              <span class="small">2018-06-27</span>
-              <a class="download button" href="https://s3.eu-central-1.amazonaws.com/franka-updates/update-1.3.2.img">Download</a>
-              <br/>
-              <span class="checksum small">sha256 update-1.3.2.img: 52d86b84bb640a29c87703517f7220f7ddfc2400f6e34c6ed310a4b5313cc36b </span>
-            </div>
+            <span class="checksum small">sha256 update-2.1.1.img: </span>
+          </div>
+          <h4>Changes</h4>
+          <ul>
+            <li>SAFETY FEATURES
+              <ul>
+                <li>Improved detection and handling of communication errors.</li>
+              </ul>
+            </li>
+            <li>NEW FEATURES
+              <ul>
+                <li>Overall performance improvements, e.g. handling of complex and long App sequences in one task.</li>
+                <li>Improved Desk design with ergonomic aspects and enhanced handling functionalities.</li>
+                <li>New functionalities can be added via Apps and services.</li>
+                <li>Better control of the “monitored stop”.</li>
+                <li>User interface improvements and bug fixes.</li>
+              </ul>
+            </li>
+          </ul>
+          <h4>Notes for Panda research</h4>
+          <ul>
+            <li>If your system is older than 1.3, version 1.3.2 (see below) needs to be installed first.</li>
+            <li>With this update the functionality of the External Activation Device will change (for detailed information please click <a href="https://s3.eu-central-1.amazonaws.com/franka-updates/How-to_User-Stop_Research_EN.PDF">here</a>), beyond that the original USER MANUAL that you received with purchasing the Panda robot does still apply.</li>
+            <li><p>Do NOT perform a factory reset</p>
+              <p>This will uninstall the Franka Control Interface – FCI and your Research App Package that you have to request again from <a href="mailto:support@franka.de">support@franka.de</a></p>
+            </li>
+            <li>Taught positions could be slightly off due to controller improvements.</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <span class="version">Version 1.3.2</span>
+            <span class="small">2018-06-27</span>
+            <a class="download button" href="https://s3.eu-central-1.amazonaws.com/franka-updates/update-1.3.2.img">Download</a>
             <br/>
-            <ul>
-              <li>Update FCI interface, requires <a href="https://github.com/frankaemika/libfranka/releases/tag/0.4.0"><code>libfranka >= 0.4.0</code></a> and <a href="https://github.com/frankaemika/franka_ros/releases/tag/0.5.0"><code>franka_ros >= 0.5.0</code></a></li>
-                <ul>
-                  <li><b><i>Important:</i></b> Please read the new entries of the libfranka documentation about <a href="https://frankaemika.github.io/docs/libfranka.html">libfranka</a> and <a href="https://frankaemika.github.io/docs/libfranka.html#rate-limiters">rate limiters</a>.</li>
-                  <li>FCI filters are deactivated by default.</li>
-                  <li>Robot limits are updated.</li>
-                  <li>Added first and second derivatives of last commanded signals.</li>
-                  <li>Fix issue with max path pose deviation with external torque controller.</li>
-                </ul>
-              </br>
-              <li>Improved joint and Cartesian impedance controller.</li>
-              <li>Improved self collision avoidance algorithm.</li>
-              <li>Improved overall stability and bug fixes.</li>
-            </ul>
-          </li>
-          <li>
-            <div>
-              <span class="version"><a href="system_update_panda_research.html">All Panda Research Releases</a></span>
-            </div>
-          </li>
-        </ul>
-      </div>
+            <span class="checksum small">sha256 update-1.3.2.img: 52d86b84bb640a29c87703517f7220f7ddfc2400f6e34c6ed310a4b5313cc36b </span>
+          </div>
+          <br/>
+          <ul>
+            <li>Update FCI interface, requires <a href="https://github.com/frankaemika/libfranka/releases/tag/0.4.0"><code>libfranka >= 0.4.0</code></a> and <a href="https://github.com/frankaemika/franka_ros/releases/tag/0.5.0"><code>franka_ros >= 0.5.0</code></a></li>
+              <ul>
+                <li><b><i>Important:</i></b> Please read the new entries of the libfranka documentation about <a href="https://frankaemika.github.io/docs/libfranka.html">libfranka</a> and <a href="https://frankaemika.github.io/docs/libfranka.html#rate-limiters">rate limiters</a>.</li>
+                <li>FCI filters are deactivated by default.</li>
+                <li>Robot limits are updated.</li>
+                <li>Added first and second derivatives of last commanded signals.</li>
+                <li>Fix issue with max path pose deviation with external torque controller.</li>
+              </ul>
+            </br>
+            <li>Improved joint and Cartesian impedance controller.</li>
+            <li>Improved self collision avoidance algorithm.</li>
+            <li>Improved overall stability and bug fixes.</li>
+          </ul>
+        </li>
+        <li>
+          <div>
+            <a href="system-updates.html"><b>Previous releases</b></a>
+          </div>
+        </li>
+      </ul>
     </section>
 
     <footer>
