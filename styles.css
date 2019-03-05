@@ -86,6 +86,7 @@ nav {
 }
 section {
   max-width: 1024px;
+  min-width: 1024px;
   margin: 50px auto auto;
   display: flex;
   flex-wrap: wrap;
