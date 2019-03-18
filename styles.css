@@ -93,6 +93,19 @@ section {
 p {
   margin: 0.5em 0;
 }
+.hint {
+  background-color: #DBFAF4;
+  padding: 12px;
+  line-height: 24px;
+}
+.hint .title {
+  font-weight: bold;
+  background-color: #1ABC9C;
+  padding: 6px 12px;
+  margin: -12px;
+  margin-bottom: 12px;
+  color: #FFF;
+}
 .logo {
   width: 160px;
   height: 43px;
