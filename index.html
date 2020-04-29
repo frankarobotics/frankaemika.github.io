@@ -83,10 +83,33 @@
         <li>
           <div class="hint">
             <p class="title">Important</p>
-            <p>
-              For system updates compatible with <a href="https://github.com/frankaemika/libfranka/releases/tag/0.6.0"><code>libfranka >= 0.6.0</code></a> or the Schmalz Cobot Pump, please <a href="mailto:support@franka.de">contact support</a>.
-            </p>
+              <p>Please note, that some of our older robots are not yet cloud enabled and will cancel installation with 'Decryption Error'. Check back with us at <a href="mailto:support@franka.de">support@franka.de</a> with your log files and we will respond with instructions when your robot is ready.</p>
+              <p>From now on, all robot software – Apps and Features – will be delivered through Franka World, in your inventory. From there, you will be able to pick on which registered robot the software should be installed. Not keeping your operating system up to date can result in serious issues, affecting your robot system’s performance, usability, connectivity, safety and security.</p>
           </div>
+          <div>
+            <span class="version">Version 4.0.0</span>
+            <span class="small">2020-05-04</span>
+            <a class="download button" href="https://s3.eu-central-1.amazonaws.com/franka-updates/update-4.0.0.img">Download</a>
+            <br/>
+            <span class="checksum small">sha256 update-4.0.0.img: </span>
+          </div>
+          <p>
+            Compatible with <a href="https://github.com/frankaemika/libfranka/releases/tag/0.8.0"><code>libfranka >= 0.8.0</code></a>.
+          </p>
+          <h4>Changes</h4>
+          <ul>
+            <li>The robot performs better in various aspects of executing tasks. Our benchmarks showed an improvement in execution time of up to 30% in tasks with many Apps!
+            <li>Get the maximum lifetime out of your robot. Instead of time in operation, the system now measures internal values and the actual wear in real-time, maximizing overall lifetime.
+            <li>Enable Franka World for Desk: register your robot in Franka World and enable Panda to benefit from all the possibilities the platform brings: access to robot management, possibility to purchase Apps, Features and services, future system updates and so much more.
+            <li>Manage everything via one single point of access. You can now register and use Franka World as your command center: administer robots, software licenses, apps, features, orders – you have it all under full control!
+            <li>Supervise your entire robot fleet: check which Apps & Features are installed on which robot and deploy Apps, from one robot to another – with just a few clicks in Franka World.
+            <li>Enter a digital environment where you feel at home: with major changes of the Desk’s side bar, we cleaned your go-to interface, making it more stylish, convenient and intuitive.
+            <li>Fine-tune your poses: press the “Move to pose” button in the Pose Adjustment dialog and the robot will move directly to this pose.
+            <li>Scale your interaction with Franka Emika’s robot to the next level by using the robot as an OPC UA server: via OPC UA you can stop tasks, open & close brakes, get system state, exchange variables, send trigger signals, provide pick poses, wait for sensor trigger, act according to the state of a sensor and read & write values and poses. For this, no “Franka Emika driver" needs to be programmed, just a simple translation to the OPC UA interface.
+            <li>Improved Modbus configuration: you can now name each Modbus I/O-pin by simply using the key “pin_names” in the JSON-file, and the naming will conveniently appear in the configuration panels of the Modbus Apps, in Desk. Additionally, by using the key "pin_config" you can also set and name entire configurations of multiple pins and their intended values, to readily and quickly select them, all at once!
+            <li>Run FCI on ARM-based platforms, for example on a Raspberry Pi.
+            <li>Use the Franka Emika Edition Schmalz Cobot Pump via FCI: you can now use the functionality of the vacuum pump not only with designated Aapps but also via FCI thanks to the 4.0.0 upgrade.
+          </ul>
         </li>
         <li>
           <div>
