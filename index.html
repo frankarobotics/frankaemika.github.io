@@ -84,6 +84,7 @@
           <div class="hint">
             <p class="title">Important</p>
               <p>Please note, that some of our older robots are not yet cloud enabled and will cancel installation with 'Decryption Error'. Check back with us at <a href="mailto:support@franka.de">support@franka.de</a> with your log files and we will respond with instructions when your robot is ready.</p>
+              <p>Please be aware that your apps will also be updated to newest version. Dependening on your current system + app version, this may add additional parameters and may require reteaching or configuring of new parameters.</p>
               <p>From now on, all robot software – Apps and Features – will be delivered through Franka World, in your inventory. From there, you will be able to pick on which registered robot the software should be installed. Not keeping your operating system up to date can result in serious issues, affecting your robot system’s performance, usability, connectivity, safety and security.</p>
           </div>
           <div>
@@ -98,17 +99,56 @@
           </p>
           <h4>Changes</h4>
           <ul>
-            <li>The robot performs better in various aspects of executing tasks. Our benchmarks showed an improvement in execution time of up to 30% in tasks with many Apps!
-            <li>Get the maximum lifetime out of your robot. Instead of time in operation, the system now measures internal values and the actual wear in real-time, maximizing overall lifetime.
-            <li>Enable Franka World for Desk: register your robot in Franka World and enable Panda to benefit from all the possibilities the platform brings: access to robot management, possibility to purchase Apps, Features and services, future system updates and so much more.
-            <li>Manage everything via one single point of access. You can now register and use Franka World as your command center: administer robots, software licenses, apps, features, orders – you have it all under full control!
-            <li>Supervise your entire robot fleet: check which Apps & Features are installed on which robot and deploy Apps, from one robot to another – with just a few clicks in Franka World.
-            <li>Enter a digital environment where you feel at home: with major changes of the Desk’s side bar, we cleaned your go-to interface, making it more stylish, convenient and intuitive.
-            <li>Fine-tune your poses: press the “Move to pose” button in the Pose Adjustment dialog and the robot will move directly to this pose.
-            <li>Scale your interaction with Franka Emika’s robot to the next level by using the robot as an OPC UA server: via OPC UA you can stop tasks, open & close brakes, get system state, exchange variables, send trigger signals, provide pick poses, wait for sensor trigger, act according to the state of a sensor and read & write values and poses. For this, no “Franka Emika driver" needs to be programmed, just a simple translation to the OPC UA interface.
-            <li>Improved Modbus configuration: you can now name each Modbus I/O-pin by simply using the key “pin_names” in the JSON-file, and the naming will conveniently appear in the configuration panels of the Modbus Apps, in Desk. Additionally, by using the key "pin_config" you can also set and name entire configurations of multiple pins and their intended values, to readily and quickly select them, all at once!
-            <li>Run FCI on ARM-based platforms, for example on a Raspberry Pi.
-            <li>Use the Franka Emika Edition Schmalz Cobot Pump via FCI: you can now use the functionality of the vacuum pump not only with designated Aapps but also via FCI thanks to the 4.0.0 upgrade.
+            <li>The robot performs better in various aspects of executing tasks. Our benchmarks showed an improvement in execution time of up to 30% in tasks with many Apps!</li>
+            <li>Get the maximum lifetime out of your robot. Instead of time in operation, the system now measures internal values and the actual wear in real-time, maximizing overall lifetime.</li>
+            <li>Enable Franka World for Desk: register your robot in Franka World and enable Panda to benefit from all the possibilities the platform brings: access to robot management, possibility to purchase Apps, Features and services, future system updates and so much more.</li>
+            <li>Manage everything via one single point of access. You can now register and use Franka World as your command center: administer robots, software licenses, apps, features, orders – you have it all under full control!</li>
+            <li>Supervise your entire robot fleet: check which Apps & Features are installed on which robot and deploy Apps, from one robot to another – with just a few clicks in Franka World.</li>
+            <li>Enter a digital environment where you feel at home: with major changes of the Desk’s side bar, we cleaned your go-to interface, making it more stylish, convenient and intuitive.</li>
+            <li>Fine-tune your poses: press the “Move to pose” button in the Pose Adjustment dialog and the robot will move directly to this pose.</li>
+            <li>Scale your interaction with Franka Emika’s robot to the next level by using the robot as an OPC UA server: via OPC UA you can stop tasks, open & close brakes, get system state, exchange variables, send trigger signals, provide pick poses, wait for sensor trigger, act according to the state of a sensor and read & write values and poses. For this, no “Franka Emika driver" needs to be programmed, just a simple translation to the OPC UA interface.</li>
+            <li>Improved Modbus configuration: you can now name each Modbus I/O-pin by simply using the key “pin_names” in the JSON-file, and the naming will conveniently appear in the configuration panels of the Modbus Apps, in Desk. Additionally, by using the key "pin_config" you can also set and name entire configurations of multiple pins and their intended values, to readily and quickly select them, all at once!</li>
+            <li>Run FCI on ARM-based platforms, for example on a Raspberry Pi.</li>
+            <li>Use the Franka Emika Edition Schmalz Cobot Pump via FCI: you can now use the functionality of the vacuum pump not only with designated Aapps but also via FCI thanks to the 4.0.0 upgrade.</li>
+          </ul>
+          <h4>Installation Hints</h4>
+          <ul>
+            <li>Download the update.</li>
+            <li>Make sure you have access to a Franka World account:
+              <ul>
+                <li>Check with your colleagues, whether your company already has an account and let them invite you with your e-mail. This can be done under "Manage > Users" in Franka World.</li>
+                <li>Otherwise register and create a new account at <a href="https://world.franka.de">Franka World</a></li>
+              </ul>
+            </li>
+            <li>Upgrade your system:
+              <ul>
+                <li>Connect to your robot, accessing Desk via <a href="https://robot.franka.de">https://robot.franka.de</a> or <a href="https://192.168.0.1">https://192.168.0.1</a>.</li>
+                <li>Backup your tasks using the task download in Desk</li>
+                <li>In Settings > System, upload & apply the upgrade</li>
+                <li>While the robot reboots, refresh your browser or re-connect as above</li>
+                <li>Apps that were present before, need to be updated (see next step) and are disabled until then.</li>
+              </ul>
+            </li>
+            <li>Update Apps with Franka World:
+              <ul>
+                <b>NOTE:</b> If you have developed Apps on your own, those Apps will be initially removed and need to be re-installed with the App development tool RIDE (see next step). Later synchronization will not overwrite your Apps anymore.
+                <li>Register the robot with your Franka World account by following the instructions in Settings > Franka World.</li>
+                <li>Backup your tasks using the task download in Desk - again, as your the format might have changed from your old system version.</li>
+                <li>Synchronize the robot. After applying the changes, you will find previously purchased Apps in your Franka World account’s inventory. If you are missing something, don’t hesitate to contact us.</li>
+                <li>Evaluate the improvements introduced by the 4.0.0 upgrade, and update your own Apps with App development tools.
+                  <ul>
+                    <li>Compatible pre-release RIDE tools and instructions for updating the Apps you have developed can be found here: <a href=https://download.franka.de/app-development-latest.zip>App Dev Tools</a></li>
+                    <li>If you use libfranka or franka_ros, a compatible version is available on Github.
+                      <ul>
+                        <li><a href=https://github.com/frankaemika/libfranka>libfranka</a></li>
+                        <li><a href=https://github.com/frankaemika/franka_ros/tree/develop>franka_ros</a></li>
+                      </ul>
+                      Follow the instructions of <a href="https://frankaemika.github.io/docs/installation_linux.html#building-from-source">Building from source</a> and make sure to check out the <a href="https://frankaemika.github.io/docs/libfranka_changelog.html">changelog</a>.
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li>
