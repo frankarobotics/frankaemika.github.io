@@ -83,9 +83,9 @@
         <li>
           <div class="hint">
             <p class="title">Important</p>
-              <p>Please note, that some of our older robots are not yet cloud enabled and will cancel installation with 'Decryption Error'. Check back with us at <a href="mailto:support@franka.de">support@franka.de</a> with your log files and we will respond with instructions when your robot is ready.</p>
-              <p>Please be aware that your apps will also be updated to newest version. Dependening on your current system + app version, this may add additional parameters and may require reteaching or configuring of new parameters.</p>
-              <p>From now on, all robot software – Apps and Features – will be delivered through Franka World, in your inventory. From there, you will be able to pick on which registered robot the software should be installed. Not keeping your operating system up to date can result in serious issues, affecting your robot system’s performance, usability, connectivity, safety and security.</p>
+            <p>Some robots may not yet be cloud enabled and will cancel installation with an error.Check back with us at <a href="mailto:support@franka.de">support@franka.de</a> with your log files and we will respond with instructions when your robot is ready.</p>
+            <p>Please be aware that your apps will also be updated to newest version. Dependening on your current system + app version, this may add additional parameters and may require reteaching or configuring of new parameters.</p>
+            <p>From now on, all robot software – Apps and Features – will be delivered through Franka World, in your inventory. From there, you will be able to pick on which registered robot the software should be installed. Not keeping your operating system up to date can result in serious issues, affecting your robot system’s performance, usability, connectivity, safety and security.</p>
           </div>
           <div>
             <span class="version">Version 4.0.0</span>
@@ -95,7 +95,7 @@
             <span class="checksum small">sha256 upgrade-4.0.0.img: 91c65feb40c986a5e420a1b246be812246126e69c68f4b40d07faa8caa8c003e</span>
           </div>
           <p>
-            Compatible with <a href="https://github.com/frankaemika/libfranka/releases/tag/0.8.0"><code>libfranka >= 0.8.0</code></a>.
+            Compatible with <a href="https://github.com/frankaemika/libfranka/releases/tag/0.8.0" target="_blank"><code>libfranka >= 0.8.0</code></a>.
           </p>
           <h4>Changes</h4>
           <ul>
@@ -114,40 +114,44 @@
           <h4>Installation Hints</h4>
           <ul>
             <li>Download the update.</li>
-            <li>Make sure you have access to a Franka World account:
+            <li><p>Make sure you have access to a Franka World account:
               <ul>
                 <li>Check with your colleagues, whether your company already has an account and let them invite you with your e-mail. This can be done under "Manage > Users" in Franka World.</li>
-                <li>Otherwise register and create a new account at <a href="https://world.franka.de">Franka World</a></li>
+                <li>Otherwise register and create a new account at <a href="https://world.franka.de" target="_blank">Franka World</a></li>
               </ul>
+            </p>
             </li>
-            <li>Upgrade your system:
+            <li><p>Upgrade your system:
               <ul>
-                <li>Connect to your robot, accessing Desk via <a href="https://robot.franka.de">https://robot.franka.de</a> or <a href="https://192.168.0.1">https://192.168.0.1</a>.</li>
+                <li>Connect to your robot, accessing Desk via <a href="https://robot.franka.de" target="_blank">https://robot.franka.de</a> (on the robot's base - also try <a href="https://192.168.0.1" target="_blank">https://192.168.0.1</a> if you encounter problems) or using the shopfloor network.
                 <li>Backup your tasks using the task download in Desk</li>
                 <li>In Settings > System, upload & apply the upgrade</li>
-                <li>While the robot reboots, refresh your browser or re-connect as above</li>
+                <li>Refresh your browser or re-connect as stated above after 1 minute.</li>
                 <li>Apps that were present before, need to be updated (see next step) and are disabled until then.</li>
               </ul>
-            </li>
-            <li>Update Apps with Franka World:
-              <ul>
-                <b>NOTE:</b> If you have developed Apps on your own, those Apps will be initially removed and need to be re-installed with the App development tool RIDE (see next step). Later synchronization will not overwrite your Apps anymore.
-                <li>Register the robot with your Franka World account by following the instructions in Settings > Franka World.</li>
-                <li>Backup your tasks using the task download in Desk - again, as your the format might have changed from your old system version.</li>
-                <li>Synchronize the robot. After applying the changes, you will find previously purchased Apps in your Franka World account’s inventory. If you are missing something, don’t hesitate to contact us.</li>
-                <li>Evaluate the improvements introduced by the 4.0.0 upgrade, and update your own Apps with App development tools.
-                  <ul>
-                    <li>Compatible pre-release RIDE tools and instructions for updating the Apps you have developed can be found here: <a href=https://download.franka.de/app-development-latest.zip>App Dev Tools</a></li>
-                    <li>If you use libfranka or franka_ros, a compatible version is available on Github.
-                      <ul>
-                        <li><a href=https://github.com/frankaemika/libfranka>libfranka</a></li>
-                        <li><a href=https://github.com/frankaemika/franka_ros/tree/develop>franka_ros</a></li>
-                      </ul>
-                      Follow the instructions of <a href="https://frankaemika.github.io/docs/installation_linux.html#building-from-source">Building from source</a> and make sure to check out the <a href="https://frankaemika.github.io/docs/libfranka_changelog.html">changelog</a>.
-                    </li>
-                  </ul>
                 </li>
+            </li>
+            <li><p>Update Apps with Franka World:
+              <ul>
+                <li>Register the robot with your Franka World account by following the instructions in Settings > Franka World.</li>
+                <li>Backup your tasks using the task download in Desk again, as the task format changed after operating system version 2.x.</li>
+                <li>Synchronize the robot. After applying the changes, you will find previously purchased Apps in your Franka World account’s inventory. If you are missing something, don’t hesitate to contact us.</li>
               </ul>
+            </p>
+            </li>
+
+            <li><p>(optional) If you use the Franka Control Interface (FCI), the
+            compatible version of <a href=https://github.com/frankaemika/libfranka target="_blank">libfranka (0.8.0)</a> and <a href=https://github.com/frankaemika/franka_ros/tree/develop target="_blank">franka_ros</a> are
+            available on Github. Follow the instructions of <a href="https://frankaemika.github.io/docs/installation_linux.html#building-from-source" target="_blank">Building from source</a> and make sure to check out the <a href="https://frankaemika.github.io/docs/libfranka_changelog.html">changelog</a>.
+            </p>
+            </li>
+
+            <li><p>(optional) If you have developed your own Apps using our App development tools
+              <ul>
+                <li>Apps installed previously using the SDK (< 0.3.0), will be removed initially and need to be re-installed with the current SDK (0.3.0). Later synchronization with Franka World will not overwrite your Apps anymore.</li>
+                <li>Find an updated SDK and instructions for updating Apps you have developed here: <a href=https://download.franka.de/app-development-latest.zip target="_blank">https://download.franka.de/app-development-latest.zip</a></li>
+              </ul>
+            </p>
             </li>
           </ul>
         </li>
