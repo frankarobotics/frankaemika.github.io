@@ -48,37 +48,23 @@
       </p>
     </section>
 
-    <section id="FCI">
-      <h2>Franka Control Interface (FCI)</h2>
-      <p>The Franka Control Interface (FCI) allows a fast and direct low-level bidirectional connection to the Arm and Hand. It provides the current status of the robot and enables its direct control with a 1kHz real-time loop.</p>
-      <div class="box">
-        <h4>FCI Documentation</h4>
-        <p>Overview, tutorial and install instructions of Franka Control Interface</p>
-      </div>
-      <div class="box">
-        <h4>libfranka</h4>
-        <p>C++ library for Franka Emika research robots</p>
-      </div>
-      <div class="box">
-        <h4>franka_ros</h4>
-        <p>ROS integration for Franka Emika research robots, including support for MoveIt! and ROS Control</p>
-      </div>
-      <div class="box">
-        <a class="button" href="https://frankaemika.github.io/docs/" role="button">Documentation</a>
-      </div>
-      <div class="box">
-        <a class="button" href="https://github.com/frankaemika/libfranka">Source code</a>
-        <a class="button" href="https://frankaemika.github.io/libfranka">API docs</a>
-      </div>
-      <div class="box">
-        <a class="button" href="https://github.com/frankaemika/franka_ros">Source code</a>
-        <a class="button" href="https://wiki.ros.org/franka_ros">ROS wiki</a>
-      </div>
+    <section id="FrankaWorld">
+      <h2>Franka World</h2>
+      <p>Franka World is an online platform that interconnects customers, partners as well as software and hardware developers, whose activity revolves around Franka Emika’s products and services. If you do not yet have a Franka World account, <a href="https://world.franka.de/">signup here</a></p>
+      <p>All System Updates and Software Licenses are delivered through Franka World. The System Update information below is only needed, if your Robot is not yet updated to version 4.0 or newer.</p>
+      <p>Information on the Franka Control Interface (FCI), franka_ros, App development and much more is collected on the <a href="https://world.franka.de/resources">Franka World Hub Resources Page</a>.
     </section>
 
     <section id="SystemUpdate">
       <a id="system-updates"></a>
       <h2>System updates</h2>
+      <h4 id="installation-hints">Installation Hints</h4>
+      <div class="hint">
+        <p class="title">Important</p>
+        <p>Some robots may not be cloud enabled and will cancel installation with an error. Check back with us at <a href="mailto:support@franka.de">support@franka.de</a> with your controller serial number and log files, and we will respond with further information on your system.</p>
+        <p>Please be aware that your apps will also be updated to newest version. Dependening on your current system + app version, this may add additional parameters and may require reteaching or configuring of new parameters.</p>
+        <p>From now on, all robot software – Apps and Features – will be delivered through Franka World, in your inventory. From there, you will be able to pick on which registered robot the software should be installed. Not keeping your operating system up to date can result in serious issues, affecting your robot system’s performance, usability, connectivity, safety and security.</p>
+      </div>
       <ul class="updates">
         <li>
           <div>
@@ -136,13 +122,6 @@
             <li>Run FCI on ARM-based platforms, for example on a Raspberry Pi.</li>
             <li>Use the Franka Emika Edition Schmalz Cobot Pump via FCI: you can now use the functionality of the vacuum pump not only with designated Aapps but also via FCI thanks to the 4.0.0 upgrade.</li>
           </ul>
-          <h4 id="installation-hints">Installation Hints</h4>
-          <div class="hint">
-            <p class="title">Important</p>
-            <p>Some robots may not be cloud enabled and will cancel installation with an error. Check back with us at <a href="mailto:support@franka.de">support@franka.de</a> with your controller serial number and log files, and we will respond with further information on your system.</p>
-            <p>Please be aware that your apps will also be updated to newest version. Dependening on your current system + app version, this may add additional parameters and may require reteaching or configuring of new parameters.</p>
-            <p>From now on, all robot software – Apps and Features – will be delivered through Franka World, in your inventory. From there, you will be able to pick on which registered robot the software should be installed. Not keeping your operating system up to date can result in serious issues, affecting your robot system’s performance, usability, connectivity, safety and security.</p>
-          </div>
           <ul>
             <li>Download the update.</li>
             <li><p>Make sure you have access to a Franka World account:
