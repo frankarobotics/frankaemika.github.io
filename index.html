@@ -55,6 +55,38 @@
       <p>Information on the Franka Control Interface (FCI), franka_ros, App development and much more is collected on the <a href="https://world.franka.de/resources">Franka World Hub Resources Page</a>.
     </section>
 
+    <section id="FCI">
+      <h2>Franka Control Interface (FCI)</h2>
+      <p>The Franka Control Interface (FCI) allows a fast and direct low-level bidirectional connection to the Arm and Hand. It provides the current status of the robot and enables its direct control with a 1kHz real-time loop.</p>
+      <div class="hint">
+        <p class="title">Important</p>
+        <p>All information here is not updated with the extra information which you can find on <a href="https://world.franka.de/resources">Franka World now (see above)</a>!</p>
+      </div>
+      <div class="box">
+        <h4>FCI Documentation</h4>
+        <p>Overview, tutorial and install instructions of Franka Control Interface</p>
+      </div>
+      <div class="box">
+        <h4>libfranka</h4>
+        <p>C++ library for Franka Emika research robots</p>
+      </div>
+      <div class="box">
+        <h4>franka_ros</h4>
+        <p>ROS integration for Franka Emika research robots, including support for MoveIt! and ROS Control</p>
+      </div>
+      <div class="box">
+        <a class="button" href="https://frankaemika.github.io/docs/" role="button">Documentation</a>
+      </div>
+      <div class="box">
+        <a class="button" href="https://github.com/frankaemika/libfranka">Source code</a>
+        <a class="button" href="https://frankaemika.github.io/libfranka">API docs</a>
+      </div>
+      <div class="box">
+        <a class="button" href="https://github.com/frankaemika/franka_ros">Source code</a>
+        <a class="button" href="https://wiki.ros.org/franka_ros">ROS wiki</a>
+      </div>
+    </section>
+
     <section id="SystemUpdate">
       <a id="system-updates"></a>
       <h2>System updates</h2>
@@ -68,102 +100,19 @@
       <ul class="updates">
         <li>
           <div>
+            <span class="version">Version 4.1+</span>
+            <span class="small">2021-01-26</span>
+            <a class="download button" href="https://world.franka.de">Go to Franka World</a>
+          </div>
+        </li>
+        <li>
+          <div>
             <span class="version">Version 4.0.4</span>
             <span class="small">2021-01-18</span>
             <a class="download button" href="https://download.franka.de/upgrade-4.0.4">Download</a>
             <br/>
             <span class="checksum small">sha256 upgrade-4.0.4: 5ca4cba526e8ea81ce191abf8c1f42c212ce121fb015229d8ff06c4a1326a99e</span>
           </div>
-          <h4>Changes</h4>
-          <ul>
-            <li>Always reset <code>NE_T_EE</code>, a temporary tool transformation, in between task executions.</li>
-          </ul>
-        </li>
-        <li>
-          <div>
-            <span class="version">Version 4.0.3</span>
-            <span class="small">2020-07-15</span>
-          </div>
-          <h4>Changes</h4>
-          <ul>
-            <li>Bug fix on unreleased feature for further validation.</li>
-          </ul>
-        </li>
-        <li>
-          <div>
-            <span class="version">Version 4.0.2</span>
-            <span class="small">2020-06-24</span>
-          </div>
-          <h4>Changes</h4>
-          <ul>
-            <li>Bug fix in handling of external enabling and activation devices to avoid false-positives.</li>
-            <li>Bug fix to avoid "System unusable" errors after emergency stops using the FEBB-1 device.</li>
-          </ul>
-        </li>
-        <li>
-          <div>
-            <span class="version" id="version-4.0.1">Version 4.0.1</span>
-            <span class="small">2020-05-04</span>
-          </div>
-          <p>
-            Compatible with <a href="https://github.com/frankaemika/libfranka/releases/tag/0.8.0" target="_blank"><code>libfranka >= 0.8.0</code></a>.
-          </p>
-          <h4>Changes</h4>
-          <ul>
-            <li>The robot performs better in various aspects of executing tasks. Our benchmarks showed an improvement in execution time of up to 30% in tasks with many Apps!</li>
-            <li>Get the maximum lifetime out of your robot. Instead of time in operation, the system now measures internal values and the actual wear in real-time, maximizing overall lifetime.</li>
-            <li>Enable Franka World for Desk: register your robot in Franka World and enable Panda to benefit from all the possibilities the platform brings: access to robot management, possibility to purchase Apps, Features and services, future system updates and so much more.</li>
-            <li>Manage everything via one single point of access. You can now register and use Franka World as your command center: administer robots, software licenses, apps, features, orders – you have it all under full control!</li>
-            <li>Supervise your entire robot fleet: check which Apps & Features are installed on which robot and deploy Apps, from one robot to another – with just a few clicks in Franka World.</li>
-            <li>Enter a digital environment where you feel at home: with major changes of the Desk’s side bar, we cleaned your go-to interface, making it more stylish, convenient and intuitive.</li>
-            <li>Fine-tune your poses: press the “Move to pose” button in the Pose Adjustment dialog and the robot will move directly to this pose.</li>
-            <li>Scale your interaction with Franka Emika’s robot to the next level by using the robot as an OPC UA server: via OPC UA you can stop tasks, open & close brakes, get system state, exchange variables, send trigger signals, provide pick poses, wait for sensor trigger, act according to the state of a sensor and read & write values and poses. For this, no “Franka Emika driver" needs to be programmed, just a simple translation to the OPC UA interface.</li>
-            <li>Improved Modbus configuration: you can now name each Modbus I/O-pin by simply using the key “pin_names” in the JSON-file, and the naming will conveniently appear in the configuration panels of the Modbus Apps, in Desk. Additionally, by using the key "pin_config" you can also set and name entire configurations of multiple pins and their intended values, to readily and quickly select them, all at once!</li>
-            <li>Run FCI on ARM-based platforms, for example on a Raspberry Pi.</li>
-            <li>Use the Franka Emika Edition Schmalz Cobot Pump via FCI: you can now use the functionality of the vacuum pump not only with designated Aapps but also via FCI thanks to the 4.0.0 upgrade.</li>
-          </ul>
-          <ul>
-            <li>Download the update.</li>
-            <li><p>Make sure you have access to a Franka World account:
-              <ul>
-                <li>Check with your colleagues, whether your company already has an account and let them invite you with your e-mail. This can be done under "Manage > Users" in Franka World.</li>
-                <li>Otherwise register and create a new account at <a href="https://world.franka.de" target="_blank">Franka World</a></li>
-              </ul>
-            </p>
-            </li>
-            <li><p>Upgrade your system:
-              <ul>
-                <li>Connect to your robot, accessing Desk via <a href="https://robot.franka.de" target="_blank">https://robot.franka.de</a> (on the robot's base - also try <a href="https://192.168.0.1" target="_blank">https://192.168.0.1</a> if you encounter problems) or using the shopfloor network.
-                <li>Backup your tasks using the task download in Desk</li>
-                <li>In Settings > System, upload & apply the upgrade</li>
-                <li>Refresh your browser or re-connect as stated above after 1 minute.</li>
-                <li>Apps that were present before, need to be updated (see next step) and are disabled until then.</li>
-              </ul>
-                </li>
-            </li>
-            <li><p>Update Apps with Franka World:
-              <ul>
-                <li>Register the robot with your Franka World account by following the instructions in Settings > Franka World.</li>
-                <li>Backup your tasks using the task download in Desk again, as the task format changed after operating system version 2.x.</li>
-                <li>Synchronize the robot. After applying the changes, you will find previously purchased Apps in your Franka World account’s inventory. If you are missing something, don’t hesitate to contact us.</li>
-              </ul>
-            </p>
-            </li>
-
-            <li><p>(optional) If you use the Franka Control Interface (FCI), the
-            compatible version of <a href=https://github.com/frankaemika/libfranka target="_blank">libfranka (0.8.0)</a> and <a href=https://github.com/frankaemika/franka_ros/tree/develop target="_blank">franka_ros</a> are
-            available on Github. Follow the instructions of <a href="https://frankaemika.github.io/docs/installation_linux.html#building-from-source" target="_blank">Building from source</a> and make sure to check out the <a href="https://frankaemika.github.io/docs/libfranka_changelog.html">changelog</a>.
-            </p>
-            </li>
-
-            <li><p>(optional) If you have developed your own Apps using our App development tools
-              <ul>
-                <li>Apps installed previously using the SDK (< 0.3.0), will be removed initially and need to be re-installed with the current SDK (0.3.0). Later synchronization with Franka World will not overwrite your Apps anymore.</li>
-                <li>Find an updated SDK and instructions for updating Apps you have developed here: <a href=https://download.franka.de/app-development-latest.zip target="_blank">https://download.franka.de/app-development-latest.zip</a></li>
-              </ul>
-            </p>
-            </li>
-          </ul>
         </li>
         <li>
           <div>
@@ -173,36 +122,6 @@
             <br/>
             <span class="checksum small">sha256 update-2.1.4.img: 4743957b326cbba91f6aa38d718dfe6aebf68f13fefd28c511555888d6af4016</span>
           </div>
-          <p>
-            Compatible with <a href="https://github.com/frankaemika/libfranka/releases/tag/0.4.0"><code>libfranka >= 0.4.0</code></a> and <a href="https://github.com/frankaemika/franka_ros/releases/tag/0.5.0"><code>franka_ros >= 0.5.0</code></a>.
-          </p>
-          <h4>Changes</h4>
-          <ul>
-            <li>SAFETY FEATURES
-              <ul>
-                <li>Improved detection and handling of communication errors.</li>
-              </ul>
-            </li>
-            <li>NEW FEATURES
-              <ul>
-                <li>Overall performance improvements, e.g. handling of complex and long App sequences in one task.</li>
-                <li>Improved Desk design with ergonomic aspects and enhanced handling functionalities.</li>
-                <li>New functionalities can be added via Apps and services.</li>
-                <li>Better control of the “monitored stop”.</li>
-                <li>User interface improvements and bug fixes.</li>
-                <li>Fix issues with inverse kinematics.</li>
-              </ul>
-            </li>
-          </ul>
-          <h4>Notes for Panda research</h4>
-          <ul>
-            <li>If your system is older than 1.3, version 1.3.2 (see below) needs to be installed first.</li>
-            <li>With this update the functionality of the External Activation Device will change (for detailed information please click <a href="https://s3.eu-central-1.amazonaws.com/franka-updates/How-to_User-Stop_Research_EN.PDF">here</a>), beyond that the original USER MANUAL that you received with purchasing the Panda robot does still apply.</li>
-            <li><p>Do NOT perform a factory reset</p>
-              <p>This will uninstall the Franka Control Interface – FCI and your Research App Package that you have to request again from <a href="mailto:support@franka.de">support@franka.de</a></p>
-            </li>
-            <li>Taught positions could be slightly off due to controller improvements.</li>
-          </ul>
         </li>
         <li>
           <div>
@@ -212,33 +131,13 @@
             <br/>
             <span class="checksum small">sha256 update-1.3.2.img: 81719df163c728efa068af9fd78ba231a10d9893d15ab28d7c9df85ff8b28899</span>
           </div>
-          <br/>
-          <ul>
-            <li>Update FCI interface, requires <a href="https://github.com/frankaemika/libfranka/releases/tag/0.4.0"><code>libfranka >= 0.4.0</code></a> and <a href="https://github.com/frankaemika/franka_ros/releases/tag/0.5.0"><code>franka_ros >= 0.5.0</code></a></li>
-              <ul>
-                <li><b><i>Important:</i></b> Please read the new entries of the libfranka documentation about <a href="https://frankaemika.github.io/docs/libfranka.html">libfranka</a> and <a href="https://frankaemika.github.io/docs/libfranka.html#signal-processing">signal processing / rate limiters</a>.</li>
-                <li>FCI filters are deactivated by default.</li>
-                <li>Robot limits are updated.</li>
-                <li>Added first and second derivatives of last commanded signals.</li>
-                <li>Fix issue with max path pose deviation with external torque controller.</li>
-              </ul>
-            </br>
-            <li>Improved joint and Cartesian impedance controller.</li>
-            <li>Improved self collision avoidance algorithm.</li>
-            <li>Improved overall stability and bug fixes.</li>
-          </ul>
-        </li>
-        <li>
-          <div>
-            <a href="system-updates.html"><b>Previous releases</b></a>
-          </div>
         </li>
       </ul>
     </section>
 
     <footer>
       <span>
-        © 2018 Franka Emika GmbH |
+        © 2021 Franka Emika GmbH |
         <a href="https://www.franka.de/imprint/" title="Imprint">Imprint</a>
       </span>
     </footer>
