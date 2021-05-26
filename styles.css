@@ -5,7 +5,7 @@ html {
   height: 100%;
 }
 body {
-  background-color: #ebebeb;
+  background-color: #fff;
   font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
   color: #000;
   font-size: 18px;
@@ -30,7 +30,7 @@ h2 {
   font-size: 30px;
   margin: 0 0 10px 0;
   line-height: 30px;
-  text-transform: uppercase;
+  text-transform: none;
   color: #19282D;
   width: 100%;
 }
@@ -96,6 +96,7 @@ p {
 .hint {
   background-color: #DBFAF4;
   padding: 12px;
+  width: 100%;
   line-height: 24px;
 }
 .hint .title {
@@ -107,8 +108,8 @@ p {
   color: #FFF;
 }
 .logo {
-  width: 160px;
-  height: 43px;
+  width: 210px;
+  height: 40px;
 }
 .navigation {
   color: #fff;
